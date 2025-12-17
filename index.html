@@ -1,127 +1,178 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: #000;
-    }
-    h1 {
-      font-size: 22px;
-      margin-bottom: 10px;
-      color: #ffffff;
-      letter-spacing: 0.5px;
-    }
-    p {
-      line-height: 1.6;
-      margin: 12px 0;
-      color: #e5e5e5;
-    }
-    .cover img {
-      width: 120px;
-      height: 120px;
-      border-radius: 6px;
-      box-shadow: 0 0 12px rgba(255,255,255,0.08);
-      display: block;
-      margin: 0 auto 18px auto;
-    }
-    .tracklist {
-      font-family: monospace;
-      background-color: #1b1b1b;
-      padding: 10px 14px;
-      border-radius: 6px;
-      margin-top: 16px;
-      line-height: 1.6;
-      color: #c9c9c9;
-      text-align: left;
-    }
-    .btn {
-      display: inline-block;
-      background-color: #e50914;
-      color: #fff;
-      text-decoration: none;
-      padding: 10px 20px;
-      border-radius: 6px;
-      font-weight: 600;
-      letter-spacing: 0.3px;
-      margin-top: 14px;
-    }
-    .footer {
-      margin-top: 20px;
-      font-size: 13px;
-      color: #666666;
-    }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+body {
+  margin:0;
+  padding:0;
+  font-family:"Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background:#000;
+}
+h1 {
+  font-size:22px;
+  color:#fff;
+  margin-bottom:10px;
+}
+p {
+  color:#e5e5e5;
+  line-height:1.6;
+}
+.cover img {
+  width:120px;
+  height:120px;
+  border-radius:6px;
+  margin:0 auto 18px;
+  display:block;
+}
+.tracklist {
+  font-family:monospace;
+  background:#1b1b1b;
+  padding:10px 14px;
+  border-radius:6px;
+  margin-top:16px;
+  color:#c9c9c9;
+  text-align:left;
+}
 
-    /* ✅ Responsive adjustments */
-    @media (max-width: 680px) {
-      h1 {
-        font-size: 18px;
-      }
-      .cover img {
-        width: 100px;
-        height: 100px;
-      }
-      table[class="main"] {
-        width: 100% !important;
-        padding: 16px !important;
-      }
-      td[class="content"] {
-        padding: 0 !important;
-      }
-    }
-  </style>
+.btn {
+  display: block;
+  max-width: 240px;
+  margin: 8px auto 0;
+  padding: 10px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.2px;
+  color: #f2f2f2;
+  text-align: left;
+}
+
+/* icon + text alignment */
+.btn span {
+  display: flex;
+  align-items: center;
+}
+
+.btn svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  fill: currentColor;
+}
+
+/* 🔥 Darkened brand colors */
+.soundcloud { background: #d94800; }
+.spotify    { background: #178a44; }
+.apple      { background: #c61c33; }
+.deezer     { background: #b94452; }
+.bandcamp   { background: #157c97; }
+.beatport   { background: #00cc78; color:#000; }
+</style>
 </head>
+
 <body>
-  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#000;">
-    <tr>
-      <td align="center" style="padding:20px 10px;">
-        <!-- ✅ Use max-width for responsiveness -->
-        <table class="main" cellpadding="0" cellspacing="0" border="0" style="max-width:640px; width:100%; background-color:#111; border-radius:10px; padding:28px;">
-          <tr>
-            <td class="content" style="text-align:center;">
-              <div class="cover">
-                <img src="summoning_cover_ss.png" alt="Summoning Cover">
-              </div>
+<table width="100%" style="background:#000;" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" style="padding:20px;">
+<table style="max-width:640px;width:100%;background:#111;border-radius:10px;padding:28px;">
+<tr>
+<td style="text-align:center;">
 
-              <h1><em>Summoning</em> by GI-RO47</h1>
+<div class="cover">
+<img src="summoning_cover_ss.png" alt="Summoning Cover">
+</div>
 
-              <p>Seven Techno tracks spanning <b>groovy</b> rhythms to <b>darker</b> realms. Each track is crafted with raw sound originating from <b>hardware</b>, and grooves built meticulously from the ground up.</p>
+<h1><em>Summoning</em> by GI-RO47</h1>
+
+<p>Seven Techno tracks spanning <b>groovy</b> rhythms to <b>darker</b> realms. Each track is crafted with raw sound originating from <b>hardware</b>, and grooves built meticulously from the ground up.</p>
 
               <p>The first three tracks explore familiar Techno soundscapes, subtly inspired by nature, while the remaining tracks venture into more <b>experimental</b> grooves, yet still remain true to the Techno aesthetic.</p>
 
-              <p>This album will be released on <b>Diffuse Reality</b> on the 15th of December.</p>
+<div class="tracklist">
+1. Lunar Ritual<br>
+2. Spirit Awakening<br>
+3. Kachina<br>
+4. Phantom Racer<br>
+5. Astral Being<br>
+6. Materiality<br>
+7. Revenant
+</div>
 
-              <p><i><b>Leaving any feedback, or letting me know if you're planning to play any of the tracks would be greatly appreciated!</b></i></p>
+<!-- 🎧 Buttons (stacked) -->
 
-              <div class="tracklist">
-                1. Lunar Ritual<br>
-                2. Spirit Awakening<br>
-                3. Kachina<br>
-                4. Phantom Racer<br>
-                5. Astral Being<br>
-                6. Materiality<br>
-                7. Revenant
-              </div>
+<!-- SoundCloud -->
+<a class="btn soundcloud" href="https://soundcloud.com/gi-ro47/sets/summoning-15-dec?si=a95f519aba7142f6ba05cab179ab623e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">
+<span>
+<svg viewBox="0 0 24 24">
+<path d="M17.5 10.5a3.5 3.5 0 00-6.8-1.1A2.8 2.8 0 009 9.3c-1.7 0-3 1.3-3 3s1.3 3 3 3h8.5a2.5 2.5 0 000-5z"/>
+</svg>
+SoundCloud
+</span>
+</a>
 
-              <p><i><b>Private promo – please don’t share publicly.</b></i></p>
+<!-- Spotify -->
+<a class="btn spotify" href="https://open.spotify.com/album/0Qr4HVubVurdYFSvTfehfc?si=SgDAyTNaTd-G-c2YlmjD2w">
+<span>
+<svg viewBox="0 0 24 24">
+<path d="M12 2a10 10 0 100 20 10 10 0 000-20zm4.6 14.4c-.2.3-.6.4-.9.2-2.5-1.5-5.7-1.8-9.4-.9-.4.1-.7-.1-.8-.5-.1-.4.1-.7.5-.8 4.1-1 7.7-.6 10.5 1.1.3.2.4.6.1.9zm1.3-3c-.3.4-.8.5-1.2.3-2.9-1.8-7.3-2.3-10.8-1.2-.4.1-.9-.1-1-.6-.1-.4.1-.9.6-1 4-1.2 9-.6 12.4 1.5.4.3.5.8.2 1.2zm.1-3.1c-3.5-2.1-9.3-2.3-12.6-1.3-.5.1-1-.1-1.1-.6-.1-.5.1-1 .6-1.1 3.8-1.2 10.2-1 14.2 1.5.4.2.6.8.3 1.2-.2.4-.8.6-1.2.3z"/>
+</svg>
+Spotify
+</span>
+</a>
 
-              <p>Private SoundCloud link (download enabled):</p>
+<!-- Apple Music -->
+<a class="btn apple" href="https://music.apple.com/nl/album/summoning/1851350418">
+<span>
+<svg viewBox="0 0 24 24">
+<path d="M16.5 1.5c-1.1.1-2.3.8-3 1.7-.6.8-1.1 2-1 3.1 1.2.1 2.4-.6 3.1-1.5.6-.8 1.1-2 1-3.3zM19.2 17.3c-.5 1.1-.8 1.6-1.5 2.5-.9 1.3-2.1 2.9-3.6 2.9-1.4 0-1.8-.9-3.5-.9-1.7 0-2.2.9-3.6.9-1.5 0-2.6-1.4-3.5-2.7-2-3-2.2-6.6-1-8.5 1-1.5 2.5-2.4 4-2.4 1.6 0 2.6.9 3.5.9.9 0 2.2-1.1 3.9-.9.7 0 2.6.3 3.9 2.2-3.4 1.9-2.9 6.8.4 8z"/>
+</svg>
+Apple Music
+</span>
+</a>
 
-              <a class="btn" href="https://soundcloud.com/gi-ro47/sets/diffuse-release/s-PbbOIV3r2AP?si=8149915a24f44c9b92e4e5e27357b411&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">Listen on SoundCloud</a>
+<!-- Deezer -->
+<a class="btn deezer" href="https://link.deezer.com/s/31Ui8gVwTfX2EBUA7lbHK">
+<span>
+<svg viewBox="0 0 24 24">
+<path d="M3 14h3v3H3zm4-2h3v5H7zm4-2h3v7h-3zm4 1h3v6h-3zm4 2h2v4h-2z"/>
+</svg>
+Deezer
+</span>
+</a>
 
-              <div class="footer">
-                <p><strong>GI-RO47</strong> • Diffuse Reality</p>
-              </div>
+<!-- Bandcamp -->
+<a class="btn bandcamp" href="https://diffusereality.bandcamp.com/album/gi-ro47-summoning">
+<span>
+<svg viewBox="0 0 24 24">
+<path d="M3 17.5L10.5 6.5H21L13.5 17.5z"/>
+</svg>
+Bandcamp
+</span>
+</a>
 
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
+<!-- Beatport -->
+<a class="btn beatport" href="https://www.beatport.com/release/summoning/5555571">
+<span>
+<svg viewBox="0 0 24 24">
+<path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-1.2 6.2h2.4v7.6h-2.4z"/>
+</svg>
+Beatport
+</span>
+</a>
+
+<div class="footer">
+<p><strong>GI-RO47</strong> • Diffuse Reality</p>
+</div>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
 </body>
 </html>
